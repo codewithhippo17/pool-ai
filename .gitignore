@@ -1,0 +1,21 @@
+# direnv / nix-direnv
+.direnv/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+*.egg
+dist/
+build/
+
+# Virtual environments
+.venv/
+venv/
+ex00/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
