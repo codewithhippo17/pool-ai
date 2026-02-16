@@ -31,7 +31,7 @@
           ];
 
           shellHook = ''
-            export LD_LIBRARY_PATH="${pkgs-old.stdenv.cc.cc.lib}/lib:''${LD_LIBRARY_PATH:-}"
+            export LD_LIBRARY_PATH="${pkgs-old.stdenv.cc.cc.lib}/lib:${pkgs-old.zlib}/lib:''${LD_LIBRARY_PATH:-}"
             echo ""
             echo "=== NumPy Piscine ==="
             echo "Python 3.8: $(python3.8 --version 2>&1)"
